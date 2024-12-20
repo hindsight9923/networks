@@ -11,6 +11,20 @@
           "address": "sent1rf0x5kevjc0v0nwfy0layalwh58c8evczme5zj",
           "pub_key": null,
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "account_number": "1",
+          "address": "sent16l0lpcj77suqkxng2fjpy7m32kk8szq007mdxm",
+          "pub_key": null,
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "account_number": "2",
+          "address": "sent1ezkpeua70eqfczt3fhttzh3s9ccqd0jssy48y2",
+          "pub_key": null,
+          "sequence": "0"
         }
       ],
       "params": {
@@ -34,6 +48,24 @@
               "denom": "udvpn"
             }
           ]
+        },
+        {
+          "address": "sent1ezkpeua70eqfczt3fhttzh3s9ccqd0jssy48y2",
+          "coins": [
+            {
+              "amount": "101000000000000",
+              "denom": "udvpn"
+            }
+          ]
+        },
+        {
+          "address": "sent16l0lpcj77suqkxng2fjpy7m32kk8szq007mdxm",
+          "coins": [
+            {
+              "amount": "101000000000000",
+              "denom": "udvpn"
+            }
+          ]
         }
       ],
       "denom_metadata": [],
@@ -44,7 +76,7 @@
       "send_enabled": [],
       "supply": [
         {
-          "amount": "1000000000000000",
+          "amount": "1202000000000000",
           "denom": "udvpn"
         }
       ]
@@ -96,7 +128,132 @@
       "registered_payees": []
     },
     "genutil": {
-      "gen_txs": []
+      "gen_txs": [
+        {
+          "auth_info": {
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "granter": "",
+              "payer": ""
+            },
+            "signer_infos": [
+              {
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AqMf0Wk4ahtVs61dlpPYAs8J9nInW33aR5bLW/5EAky9"
+                },
+                "sequence": "0"
+              }
+            ],
+            "tip": null
+          },
+          "body": {
+            "extension_options": [],
+            "memo": "5fd16a5add7925a0c086ba6434a486a7d461b3f8@139.162.3.204:26656",
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "commission": {
+                  "max_change_rate": "0.010000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "rate": "0.100000000000000000"
+                },
+                "delegator_address": "sent16l0lpcj77suqkxng2fjpy7m32kk8szq007mdxm",
+                "description": {
+                  "details": "",
+                  "identity": "",
+                  "moniker": "nil",
+                  "security_contact": "",
+                  "website": ""
+                },
+                "min_self_delegation": "1",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "U7Fd1dAogJbrUn2hy0FJHATghm1EYGYhbG+Qxt5glkQ="
+                },
+                "validator_address": "sentvaloper16l0lpcj77suqkxng2fjpy7m32kk8szq0smyqfj",
+                "value": {
+                  "amount": "100000000000000",
+                  "denom": "udvpn"
+                }
+              }
+            ],
+            "non_critical_extension_options": [],
+            "timeout_height": "0"
+          },
+          "signatures": [
+            "deoO77WyuX1A83c3v6UPZyxUPQGiOdi6PSUuFJvzkDcevuNsEY5G/u4mTrOuCWma9z8YSt5D0iuk/Pn02PRW9g=="
+          ]
+        },
+        {
+          "auth_info": {
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "granter": "",
+              "payer": ""
+            },
+            "signer_infos": [
+              {
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AqqUhEIVzRlXHFTTfvfQ4GoO9gsmQI45Exn1bfqzBDgo"
+                },
+                "sequence": "0"
+              }
+            ],
+            "tip": null
+          },
+          "body": {
+            "extension_options": [],
+            "memo": "7437c7563fff18c72aca659918a51e5a938d6b0e@139.162.57.160:26656",
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "commission": {
+                  "max_change_rate": "0.010000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "rate": "0.100000000000000000"
+                },
+                "delegator_address": "sent1ezkpeua70eqfczt3fhttzh3s9ccqd0jssy48y2",
+                "description": {
+                  "details": "",
+                  "identity": "",
+                  "moniker": "nil",
+                  "security_contact": "",
+                  "website": ""
+                },
+                "min_self_delegation": "1",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "hEBwZIK4kS2M7zop4T8qY1MGq4S5lN1vkdBEOzYvF5w="
+                },
+                "validator_address": "sentvaloper1ezkpeua70eqfczt3fhttzh3s9ccqd0js0p22tr",
+                "value": {
+                  "amount": "100000000000000",
+                  "denom": "udvpn"
+                }
+              }
+            ],
+            "non_critical_extension_options": [],
+            "timeout_height": "0"
+          },
+          "signatures": [
+            "+Rl4Q/rAiNylXcxfJzSlB+WODWTYPv/VZgS1klcAYAFDvIOylhNHiYjlWN8xQj5gZ+40CJuDQmlMiBYEcduj2A=="
+          ]
+        }
+      ]
     },
     "gov": {
       "deposit_params": null,
@@ -366,6 +523,6 @@
       "app": "0"
     }
   },
-  "genesis_time": "2024-12-20T18:00:00.00Z",
+  "genesis_time": "2024-12-20T18:00:00Z",
   "initial_height": "1"
 }
